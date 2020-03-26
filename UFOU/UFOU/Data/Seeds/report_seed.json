@@ -1,0 +1,212 @@
+[
+  {
+    "Location": "California",
+    "Shape": 2,
+    "Duration": "26 minutes",
+    "Description": "UFO seen in California that lasted 26 minutes",
+    "DateOccurred": "2008/10/09",
+    "DateSubmitted": "2008/10/18",
+    "DatePosted": "2008/10/22",
+    "Approved": true
+  },
+  {
+    "Location": "California",
+    "Shape": 1,
+    "Duration": "30 minutes",
+    "Description": "UFO seen in California that lasted 30 minutes",
+    "DateOccurred": "2003/10/09",
+    "DateSubmitted": "2003/10/18",
+    "DatePosted": "2003/10/22",
+    "Approved": true
+  },
+  {
+    "Location": "Alaska",
+    "Shape": 5,
+    "Duration": "17 hours",
+    "Description": "UFO seen in Alaska that lasted 17 hours",
+    "DateOccurred": "2015/03/12",
+    "DateSubmitted": "2015/07/04",
+    "DatePosted": "2015/07/14",
+    "Approved": true
+  },
+  {
+    "Location": "Nebraska",
+    "Shape": 7,
+    "Duration": "13 hours",
+    "Description": "UFO seen in Nebraska that lasted 13 hours",
+    "DateOccurred": "2004/04/12",
+    "DateSubmitted": "2004/08/14",
+    "DatePosted": "2004/09/07",
+    "Approved": true
+  },
+  {
+    "Location": "Tennessee",
+    "Shape": 11,
+    "Duration": "11 hours",
+    "Description": "UFO seen in Tennessee that lasted 11 hours",
+    "DateOccurred": "2014/02/23",
+    "DateSubmitted": "2014/07/20",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "Massachusetts",
+    "Shape": 5,
+    "Duration": "12 days",
+    "Description": "UFO seen in Massachusetts that lasted 12 days",
+    "DateOccurred": "2004/09/23",
+    "DateSubmitted": "2005/06/26",
+    "DatePosted": "2005/07/07",
+    "Approved": true
+  },
+  {
+    "Location": "New Hampshire",
+    "Shape": 9,
+    "Duration": "4 seconds",
+    "Description": "UFO seen in New Hampshire that lasted 4 seconds",
+    "DateOccurred": "2000/08/19",
+    "DateSubmitted": "2001/06/03",
+    "DatePosted": "2001/07/02",
+    "Approved": true
+  },
+  {
+    "Location": "Washington",
+    "Shape": 5,
+    "Duration": "16 seconds",
+    "Description": "UFO seen in Washington that lasted 16 seconds",
+    "DateOccurred": "2013/10/09",
+    "DateSubmitted": "2014/06/23",
+    "DatePosted": "2014/07/19",
+    "Approved": true
+  },
+  {
+    "Location": "Delaware",
+    "Shape": 15,
+    "Duration": "25 hours",
+    "Description": "UFO seen in Delaware that lasted 25 hours",
+    "DateOccurred": "2015/02/09",
+    "DateSubmitted": "2015/11/15",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "Wisconsin",
+    "Shape": 14,
+    "Duration": "5 days",
+    "Description": "UFO seen in Wisconsin that lasted 5 days",
+    "DateOccurred": "2009/09/08",
+    "DateSubmitted": "2010/03/07",
+    "DatePosted": "2010/03/30",
+    "Approved": true
+  },
+  {
+    "Location": "Mississippi",
+    "Shape": 3,
+    "Duration": "7 hours",
+    "Description": "UFO seen in Mississippi that lasted 7 hours",
+    "DateOccurred": "2009/09/17",
+    "DateSubmitted": "2010/09/04",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "New Mexico",
+    "Shape": 19,
+    "Duration": "23 hours",
+    "Description": "UFO seen in New Mexico that lasted 23 hours",
+    "DateOccurred": "2008/05/13",
+    "DateSubmitted": "2008/07/05",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "Rhode Island",
+    "Shape": 1,
+    "Duration": "12 days",
+    "Description": "UFO seen in Rhode Island that lasted 12 days",
+    "DateOccurred": "2008/05/19",
+    "DateSubmitted": "2008/08/21",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "Minnesota",
+    "Shape": 5,
+    "Duration": "7 seconds",
+    "Description": "UFO seen in Minnesota that lasted 7 seconds",
+    "DateOccurred": "2011/07/07",
+    "DateSubmitted": "2012/05/23",
+    "DatePosted": "2012/05/24",
+    "Approved": true
+  },
+  {
+    "Location": "North Carolina",
+    "Shape": 12,
+    "Duration": "4 hours",
+    "Description": "UFO seen in North Carolina that lasted 4 hours",
+    "DateOccurred": "2013/05/18",
+    "DateSubmitted": "2013/11/29",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "Illinois",
+    "Shape": 18,
+    "Duration": "14 minutes",
+    "Description": "UFO seen in Illinois that lasted 14 minutes",
+    "DateOccurred": "2002/06/02",
+    "DateSubmitted": "2003/01/26",
+    "DatePosted": "2003/02/18",
+    "Approved": true
+  },
+  {
+    "Location": "Maryland",
+    "Shape": 3,
+    "Duration": "10 seconds",
+    "Description": "UFO seen in Maryland that lasted 10 seconds",
+    "DateOccurred": "2014/04/30",
+    "DateSubmitted": "2015/03/15",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "Nebraska",
+    "Shape": 0,
+    "Duration": "15 seconds",
+    "Description": "UFO seen in Nebraska that lasted 15 seconds",
+    "DateOccurred": "2013/01/11",
+    "DateSubmitted": "2013/02/11",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "Ohio",
+    "Shape": 18,
+    "Duration": "27 minutes",
+    "Description": "UFO seen in Ohio that lasted 27 minutes",
+    "DateOccurred": "2008/11/04",
+    "DateSubmitted": "2009/10/14",
+    "DatePosted": "",
+    "Approved": false
+  },
+  {
+    "Location": "South Carolina",
+    "Shape": 15,
+    "Duration": "20 seconds",
+    "Description": "UFO seen in South Carolina that lasted 20 seconds",
+    "DateOccurred": "2019/11/21",
+    "DateSubmitted": "2019/12/03",
+    "DatePosted": "2019/12/24",
+    "Approved": true
+  },
+  {
+    "Location": "Ohio",
+    "Shape": 0,
+    "Duration": "13 hours",
+    "Description": "UFO seen in Ohio that lasted 13 hours",
+    "DateOccurred": "2015/03/27",
+    "DateSubmitted": "2015/04/26",
+    "DatePosted": "2015/05/25",
+    "Approved": true
+  }
+]

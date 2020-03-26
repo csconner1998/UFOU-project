@@ -1,0 +1,59 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Favorite Reports";
+}
+
+<h1>Your Favorite Reports</h1>
+
+<p></p>
+<table class="table" style="background-color:white">
+    <thead>
+        <tr>
+            <th>
+                Date Occurred
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+                Shape
+            </th>
+            <th>
+                Duration
+            </th>
+            <th>
+                Description
+            </th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        
+        @foreach (var fr in Model.FR)
+        {
+                <tr>
+                    <td>
+                        @fr.Item2.DateOccurred
+                    </td>
+                    <td>
+                        @fr.Item2.Location
+                    </td>
+                    <td>
+                        @fr.Item2.Shape
+                    </td>
+                    <td>
+                        @fr.Item2.Duration
+                    </td>
+                    <td>
+                        @fr.Item2.Description
+                    </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@fr.Item1.ID">Delete</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>
+

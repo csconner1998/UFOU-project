@@ -1,0 +1,70 @@
+﻿@model IEnumerable<UFOU.Models.Report>
+
+@{
+    ViewData["Title"] = "Scraper";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div style="background-color:rgb(255, 255, 254, 0.5)" class="container">
+        <h1 class="jumbotron text-dark" style="background-color:transparent">Scraper Configuration</h1>
+
+        <div class="row">
+            <div class="container col">
+                <div class="col">
+                    <div class="row"><input id="batch" type="text" /></div>
+                    <div class="row"><button id="runButton" class="btn btn-success btn-lg" onclick="runScraper(100)">RUN</button></div>
+                </div>
+
+            </div>
+            <div class="col flex-md-column-reverse">
+                <button id="haltButton" class="btn btn-danger btn-lg" onclick="haltScraper()">HALT</button>
+            </div>
+        </div>
+
+    </div>
+<script>
+    function runScraper(e, batch_size) {
+        $.ajax({
+            method: "POST",
+            url: "/Reports/RunScraper",
+            data: {
+                batchSize: batch_size,
+            }
+        }).done((raw) => {
+            Swal.fire({
+                title: 'Success',
+                text: 'Scraper started!',
+                type: 'success',
+            })
+        }).fail((raw) => {
+            var response = $.parseJSON(raw);
+            Swal.fire({
+                title: 'Error',
+                text: 'Error: ' + response['msg'],
+                type: 'error',
+            })
+        });
+    }
+
+    function haltScraper(e) {
+        $.ajax({
+            method: "POST",
+            url: "/Reports/HaltScraper",
+
+        }).done((raw) => {
+            Swal.fire({
+                title: 'Success',
+                text: 'Scraper halted!',
+                type: 'success',
+            })
+        }).fail((raw) => {
+            var response = $.parseJSON(raw);
+            Swal.fire({
+                title: 'Error',
+                text: 'Error: something is very wrong if you see this message',
+                type: 'error',
+            })
+        });
+    }
+
+</script>

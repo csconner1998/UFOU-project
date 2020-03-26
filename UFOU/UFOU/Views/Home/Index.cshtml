@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "UFO-U Home Page";
+}
+
+<body>
+    <div id="main_container" class="container" style="background-color:rgb(255, 255, 254, 0.5)">
+        <div class="jumbotron" style="background-color:transparent">
+            <h1 class="display-4" style="color:rebeccapurple; font-weight: bold;">UFO-U</h1>
+            <p class="lead" style="color:rebeccapurple; font-weight: bold;">Track and Organize your UFO sightings!</p>
+            <hr class="my-4">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" style="background-color:transparent">
+                <h2>
+                    <a asp-controller="Reports" asp-action="Index" style="color:rebeccapurple">UFO Reports</a>
+                </h2>
+                <p> View all the UFO Reports that are stored in the National UFO Reporting Center in an organized table.</p>
+            </div>
+            <div class="col-md-6" style="background-color:transparent">
+                <h2>
+                    <a asp-controller="Location" asp-action="Index" style="color:rebeccapurple">UFO Map</a>
+                </h2>
+                <p>
+                    Organized, by region, UFO data from the National UFO Reporting Center. More information (including graphical analysis)
+                    available by clicking on a region.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>

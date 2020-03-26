@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/UFOU/obj
+UFOU/bin
+/ufou.zip
+/ScraperConsole/bin/Debug/netcoreapp2.2
+/ScraperConsole/obj

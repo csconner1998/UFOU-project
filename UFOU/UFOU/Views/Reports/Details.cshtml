@@ -1,0 +1,60 @@
+﻿@model UFOU.Models.Report
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Report Details</h1>
+
+<div >
+    <p></p>
+    <hr />
+    <dl class="row" style="background-color:white">
+        <dt class="col-sm-2" style="color:rebeccapurple; font-weight:bold">
+            @Html.DisplayNameFor(model => model.ReportId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ReportId)
+        </dd>
+        <dt class="col-sm-2" style="color:rebeccapurple; font-weight:bold">
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt class="col-sm-2" style="color:rebeccapurple; font-weight:bold">
+            @Html.DisplayNameFor(model => model.Shape)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Shape)
+        </dd>
+        <dt class="col-sm-2" style="color:rebeccapurple; font-weight:bold">
+            @Html.DisplayNameFor(model => model.Duration)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Duration)
+        </dd>
+        <dt class="col-sm-2" style="color:rebeccapurple; font-weight:bold">
+            @Html.DisplayNameFor(model => model.DateOccurred)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateOccurred)
+        </dd>
+        <dt class="col-sm-2" style="color:rebeccapurple; font-weight:bold">
+            @Html.DisplayNameFor(model => model.DateSubmitted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DateSubmitted)
+        </dd>
+        <dt class="col-sm-2" style="color:rebeccapurple; font-weight:bold">
+            @Html.DisplayNameFor(model => model.DatePosted)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.DatePosted)
+        </dd>
+        <dt class="col-sm-2">
+            <a asp-action="Edit" asp-route-id="@Model.ReportId">Edit</a> |
+            <a asp-action="Index">Back to List</a>
+        </dt>
+    </dl>
+</div>

@@ -1,0 +1,44 @@
+﻿
+
+@model IEnumerable<UFOU.Models.BarGraph>
+
+@{
+    foreach (var item in Model)
+    {
+        ViewData["Title"] = "Bar Graph for " + item.Location;
+        break;
+    }
+}
+
+@foreach (var item in Model)
+{
+    <h1> Distribution of UFO Sightings in @Html.DisplayFor(modelItem => item.Location)</h1>
+    break;
+}
+
+<p></p>
+
+@{
+    string[] shapes = new string[Model.Count()];
+    int[] values = new int[Model.Count()];
+
+    int index = 0;
+    foreach (var item in Model)
+    {
+        shapes[index] = item.Shape.ToString();
+        values[index] = item.Quantity;
+        index++;
+    }
+
+    string shapesParam = string.Join(" ", shapes);
+    string valuesParam = string.Join(" ", values);
+}
+<input type="hidden" id="shapes" value="@shapesParam" />
+<input type="hidden" id="values" value="@valuesParam" />
+
+<div id="myDiv"><!-- Plotly chart will be drawn inside this DIV --></div>
+
+@section Scripts
+{
+    <script src="~/js/bargraph.js"></script>
+}

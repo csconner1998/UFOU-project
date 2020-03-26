@@ -1,0 +1,70 @@
+﻿@model IEnumerable<UFOU.Models.Location>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@{
+    List<string> Locations = new List<string>();
+    List<string> commonShape = new List<string>();
+    List<string> sightings = new List<string>();
+}
+@foreach (var item in Model)
+{
+    Locations.Add(item.Name);
+    commonShape.Add("Most Common Shape: " + item.MostCommonShape.ToString());
+    sightings.Add(item.Sightings.ToString());
+
+}
+@{
+    string LocationsString = string.Join("/", Locations);
+    string ShapeString = string.Join("/", commonShape);
+    string SightingStrings = string.Join("/", sightings);
+}
+<input type="hidden" id="locationsinput" value="@LocationsString" />
+<input type="hidden" id="shapeinput" value="@ShapeString" />
+<input type="hidden" id="sightinginput" value="@SightingStrings" />
+<div id="myDiv"></div>
+<p>
+</p>
+<table class="table" style="background-color:white">
+    <thead>
+        <tr>
+            <th>
+                Location
+            </th>
+            <th>
+                Most Common UFO Shape
+            </th>
+            <th>
+                Number of Sightings
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    <a asp-controller="BarGraph" asp-action="Index" asp-route-locationName="@item.Name">
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </a>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MostCommonShape)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Sightings)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts
+{
+    <script src="~/js/usmap.js"></script>
+
+}

@@ -1,0 +1,72 @@
+﻿@model IEnumerable<UFOU.Models.Report>
+
+@{
+    ViewData["Title"] = "Reports Needing Approval";
+}
+
+<h1>UFO Sighting Reports</h1>
+
+<p>
+    <a class="btn btn-primary" asp-action="Create" style="font-weight:bold; color:white">Report New UFO Sighting</a>
+</p>
+
+<table class="table" style="background-color:white">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DateOccurred)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shape)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Duration)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th></th>
+
+            </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOccurred)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Shape)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <div>
+                    <button class="btn" style="background-color:#bc8fd1" type='button' onclick="add_favorite(event, @item.ReportId)">
+                        Approve?
+                    </button>
+                </div>
+            </td>
+            <td>
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ReportId">Delete</a>
+            </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts
+{
+    <script src="~/js/approve.js"></script>
+}
